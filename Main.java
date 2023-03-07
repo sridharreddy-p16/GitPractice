@@ -6,5 +6,8 @@ public class Main{
 		
 		ElectricEngine ee = new ElectricEngine();
 		ee.start();
+		
+		PetrolEngine pe = new PetrolEngine();
+		pe.start();
 	}
 }
