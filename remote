@@ -1,2 +1,21 @@
 Added in the remote.
 to check the pull operation.
+public static int secondHeighest(int[] arr) {
+	    
+	    for (int j = 0; j < arr.length- 1; j++) {
+	    	 
+            if (arr[j] > arr[j + 1]) {
+ 
+                // Swapping the elements.
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+ 
+                j = -1;
+            }
+		}
+		for (int i : arr) {
+			System.out.println(i);
+		}
+		return arr[arr.length-2];
+	}
